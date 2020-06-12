@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STL的爱好</title>
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            
+
+        }
+        ul>li a{
+            text-decoration: none;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .contain{
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;        }
+        header{
+            background-color: coral;
+           
+
+        }
+        .head-title{
+            background-color: coral;
+            display: flex;
+            flex: 1;
+            align-items: center;
+            height: 64px;
+        }
+        .icon{
+            
+            height: 20px;
+            width: 20px;
+        }
+        .nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            flex: 1;
+            align-items: center;
+        }
+        .nav ul{
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .nav ul>li>a{
+            display: inline-block;
+            padding: 10px;
+            color: white;
+        }
+        
+        footer{
+            background-color: coral;
+            color: cornsilk;
+        }
+        .dy{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;align-items: baseline;
+        }
+        .section-title{
+            display: flex;
+            justify-content: center;
+        }
+        .contain.kt{
+            
+            flex-direction: column;
+            
+
+        }
+        
+        .yx{
+            display: flex;
+            flex-direction: row;
+            width: 1200px;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .yx ul{
+            list-style: none;
+        }
+        .left{
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+        }
+        .right{
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            justify-content: flex-end;
+            
+        }
+        
+        
+        
+        
+    </style>
+</head>
+<body>
+    
+        <header>
+        <div class="contain">
+        <div class="head-title">
+            <img src="./1.jpg" alt="logo" class="icon">
+            <span>STL的爱好</span>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#movie">喜欢的电影</a></li>
+                <li><a href="#game">喜欢的游戏</a></li>
+                <li><a href="#talk">聊一聊</a></li>
+            </ul>
+        </nav>
+        </div>
+        </header>
+        <section>
+        <div class="contain kt" >
+            <h1 class="section-title" id="movie">喜欢的电影</h1>
+            <div >
+                <ul class="dy" >
+                    <li><img src="./2.jpg" alt="">
+                    <h4><a href="https://movie.douban.com/subject/1652592/">阿丽塔：战斗天使</a></h4>
+                    </li>
+                    <li><img src="./3.jpg" alt="">
+                    <h4><a href="https://movie.douban.com/subject/26336253/">蜘蛛侠：英雄远征</a></h4>
+                    </li>
+                    <li><img src="./4.jpg" alt="">
+                    <h4><a href="https://movie.douban.com/subject/26816090/">沉默的证人</a></h4>
+                    </li>
+                    <li>
+                        <img src="./5.jpg" alt="">
+                    <h4><a href="https://movie.douban.com/subject/26336253/">使徒行者</a></h4>
+                    </li>
+                </ul>
+            </div>
+            <h1 class="section-title" id="game">喜欢的游戏</h1>
+            <div>
+                <ul class="yx">
+                    <li>
+                        <img src="./6.jpg" alt=""  width="250px">
+                        <a href="https://lol.qq.com/main.shtml">
+                            <h4>英雄联盟</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <img src="./7.jpg" alt="" width="250px">
+                        <a href="https://www.callofduty.com/modernwarfare">
+                            <h4>使命召唤16</h4>
+                        </a>
+                        </li>
+                    <li>
+                        <img src="./8.jpg" alt="" width="250px">
+
+                        <a href="https://www.csgo.com.cn/index.html">
+                            <h4>CS:GO</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <img src="./9.jpg" alt="" width="250px" >
+                        <a href="http://www.monsterhunterworld.com/">
+                            <h4>怪物猎人</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="contain" id="talk">
+            <div class="left">
+                <p>不饱食以终日，不弃功于寸阴，交个朋友吧。</p>
+            </div>
+            <div class="right">
+                <img src="./10.jpg" alt="" style="width:160px;padding: 10px;margin: 10px;">
+
+            </div>
+            
+           
+
+        </div>
+        
+    </footer>
+    <bottomer style="display: flex;flex: 1;background-color: coral;">
+        <div class="contain" style="color: cornsilk;justify-content: center;">
+            <div class="bottom">
+                <h4>版权所有——STL</h4>
+            </div>
+        </div>
+    </bottomer>
+
+    
+</body>
+</html>
