@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STL的爱好</title>
     <style>
+        html {
+        overflow: auto;
+         }
         ul{
             list-style-type: none;
             margin: 0;
@@ -18,12 +21,18 @@
         body{
             margin: 0;
             padding: 0;
+            height: auto;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            min-width: 380px;
         }
         .contain{
             width: 1200px;
             margin: 0 auto;
             display: flex;
-            flex-direction: row;        }
+            flex-wrap: wrap;
+            flex-direction: row;       
+            margin: 0 auto; }
         header{
             background-color: coral;
            
@@ -63,15 +72,32 @@
             background-color: coral;
             color: cornsilk;
         }
+        section{
+            width: 1200px;
+            margin: 0 auto;
+        }
         .dy{
             display: flex;
+            flex-wrap: wrap;
             flex-direction: row;
-            justify-content: space-between;align-items: baseline;
+            justify-content: space-between;
+            align-items: baseline;
+            margin: 0 auto;
+        }
+        .dyimg{
+            background-color: #fef0ef;
+            display: flex;
+            margin: 10px 10px;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
         }
         .section-title{
             display: flex;
             justify-content: center;
+            text-align: center;
         }
+        
         .contain.kt{
             
             flex-direction: column;
@@ -82,9 +108,19 @@
         .yx{
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             width: 1200px;
             justify-content: space-between;
             align-items: baseline;
+            margin: 0 auto;
+        }
+        .yximg{
+            background-color: #fef0ef;
+             display: flex;
+    margin: 10px 10px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
         }
         .yx ul{
             list-style: none;
@@ -101,7 +137,100 @@
             justify-content: flex-end;
             
         }
+    @media screen and (max-width: 1260px) {
+    header{
+      width:100%;
+    }
+    .content {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .section {
+      width: 1000px;
+      margin: 0 auto;
+    }
+    .contain.kt-movie{
+      width: 100%;
+    }
+    .contain.yx-game{
+      width: 100%;
+    }
+    .dy img{
+      width: 200px;
+      height: 320px;
+    }
+    .yx img{
+        width: 200px;
+      height: 320px;
+    }
+    
+    footer {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: row;
+      margin: 0 auto;
+      background-color:coral;
+    }
+    bottomer{
+        width: 100% px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: row;
+      margin: 0 auto
+      background-color:coral;
+    }
+
+  }
+  
+    @media screen and (max-width: 1024px) {
+    header{
+      width: 100%;
+    }
+    .contain {
+      width: 100%;
+      margin: 0 auto;
+    }
+    section{
+        width: 100%;
+        margin: 0 auto;
         
+
+    }
+    .coontain kt{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    
+    .dy img{
+      width: 200px;
+      height: 320px;
+    }
+    .dy img {
+      width: 200px;
+      height: 320px;
+    }
+    footer {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: row;
+      margin: 0 auto;
+    }
+    bottomer {
+    width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: row;
+      margin: 0 auto;
+    }
+    
+  }
         
         
         
@@ -125,21 +254,24 @@
         </div>
         </header>
         <section>
-        <div class="contain kt" >
+        <div class="contain kt" style="@media screen and (max-width: 1024px)" {img{
+            width: 200px;
+            height: 320px;
+          }} >
             <h1 class="section-title" id="movie">喜欢的电影</h1>
             <div >
                 <ul class="dy" >
-                    <li><img src="./2.jpg" alt="">
+                    <li><img src="./2.jpg" alt="" class="dyimg">
                     <h4><a href="https://movie.douban.com/subject/1652592/">阿丽塔：战斗天使</a></h4>
                     </li>
-                    <li><img src="./3.jpg" alt="">
+                    <li><img src="./3.jpg" alt="" class="dyimg">
                     <h4><a href="https://movie.douban.com/subject/26336253/">蜘蛛侠：英雄远征</a></h4>
                     </li>
-                    <li><img src="./4.jpg" alt="">
+                    <li><img src="./4.jpg" alt="" class="dyimg">
                     <h4><a href="https://movie.douban.com/subject/26816090/">沉默的证人</a></h4>
                     </li>
                     <li>
-                        <img src="./5.jpg" alt="">
+                        <img src="./5.jpg" alt="" class="dyimg">
                     <h4><a href="https://movie.douban.com/subject/26336253/">使徒行者</a></h4>
                     </li>
                 </ul>
@@ -148,26 +280,26 @@
             <div>
                 <ul class="yx">
                     <li>
-                        <img src="./6.jpg" alt=""  width="250px">
+                        <img src="./6.jpg" alt=""  width="250px" class="yximg">
                         <a href="https://lol.qq.com/main.shtml">
                             <h4>英雄联盟</h4>
                         </a>
                     </li>
                     <li>
-                        <img src="./7.jpg" alt="" width="250px">
+                        <img src="./7.jpg" alt="" width="250px" class="yximg">
                         <a href="https://www.callofduty.com/modernwarfare">
                             <h4>使命召唤16</h4>
                         </a>
                         </li>
                     <li>
-                        <img src="./8.jpg" alt="" width="250px">
+                        <img src="./8.jpg" alt="" width="250px" class="yximg">
 
                         <a href="https://www.csgo.com.cn/index.html">
                             <h4>CS:GO</h4>
                         </a>
                     </li>
                     <li>
-                        <img src="./9.jpg" alt="" width="250px" >
+                        <img src="./9.jpg" alt="" width="250px" class="yximg" >
                         <a href="http://www.monsterhunterworld.com/">
                             <h4>怪物猎人</h4>
                         </a>
@@ -199,6 +331,7 @@
             </div>
         </div>
     </bottomer>
+    <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279017010'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1279017010%26online%3D1' type='text/javascript'%3E%3C/script%3E"));</script>
 
     
 </body>
